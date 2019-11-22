@@ -8,7 +8,6 @@ function toggleMenu() {
 }
 
 function changeLocation(location){
-    console.log(window.location.pathname);
         window.location.pathname = "Epos/" + location;
 }
 
@@ -18,13 +17,13 @@ function scrollToTop(){
 
 $(document).ready(function () {
     var menu = $("#menu")[0];
-    if(window.location.pathname != "/EPOS/index.html"){
+    if(window.location.pathname != "/Epos/index.html"){
         menu.style.display = "block";
 
-        if(window.location.pathname == "/EPOS/about-us.html"){
+        if(window.location.pathname == "/Epos/about-us.html"){
             $("#about-us")[0].firstElementChild.style.color = "hotpink"
         }
-        else if(window.location.pathname == "/EPOS/contact.html"){
+        else if(window.location.pathname == "/Epos/contact.html"){
             $("#contact")[0].firstElementChild.style.color = "hotpink"
         }
         else {

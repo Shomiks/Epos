@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/wristwatch-clock-time-watches-512.png" type="image/x-icon">
+    <title>Hourglass | Contact</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</head>
+<body>
+<div class="grid-container">
+    <div class="header">
+        <header>
+            <nav>
+                <ul>
+                    <li id="home" onclick="changeLocation('index.html')"><a >Home</a></li>
+                    <li onclick="toggleMenu()">Menu</li>
+                    <nav id="menu">
+                        <ul>
+                            <li id="about-us" onclick="changeLocation('about-us.html')"><a >About Us</a></li>
+                            <li id="gallery" onclick="changeLocation('gallery.html')" ><a>Gallery</a></li>
+                            <li id="contact"><a href="contact.html" >Contact</a></li>
+                        </ul>
+                    </nav>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="main" id="form1">
+        <span>You need a repair? Tell us more!</span>
+        <form>
+            <label style="font-size: 30px">First name:</label><br>
+            <input type="text" name="firstname" id="firstname"><br>
+            <label style="font-size: 30px">Last name:</label><br>
+            <input type="text" name="lastname"><br>
+            <select required name="select">
+                <option disabled selected value> -- select a type --</option>
+                <option value="clock">Clock</option>
+                <option value="watch">Watch</option>
+                <option value="pocket-watch">Pocket watch</option>
+                <option value="hourglass">Hourglass</option>
+            </select><br>
+            <div id="radio" style="font-size: 12px">
+                <span style="font-size: 16px">Let us know when you're coming</span><br>
+                <input id="8-10" type="radio" name="time" value="8-10"> 8-10
+                <input type="radio" name="time" value="10-12"> 10-12
+                <input type="radio" name="time" value="12-14"> 12-14
+                <input type="radio" name="time" value="14-16"> 14-16
+            </div>
+        </form>
+        <button type="submit" form="form1" value="Submit" onclick="submitForm()">Submit</button>
+    </div>
+
+    <div class="footer">
+        <div id="arrow" onclick="scrollToTop()"></div>
+        <span style="font-size: 12px; margin:0 auto"> © 2019 Vienna Hourglass Shop&Service • 703-255-0055 • Powered & Designed by Void</span>
+    </div>
+</div>
+
+</body>
+</html>

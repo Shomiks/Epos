@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/wristwatch-clock-time-watches-512.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/home-text.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/main.js"></script>
+
+    <title>Hourglass | Home</title>
+
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="header">
+        <header>
+            <nav>
+                <ul>
+                    <li id="home" onclick="changeLocation('index.html')"><a >Home</a></li>
+                    <li onclick="toggleMenu()">Menu</li>
+                    <nav id="menu">
+                        <ul>
+                    <li id="about-us" onclick="changeLocation('about-us.html')"><a >About Us</a></li>
+                    <li id="gallery" onclick="changeLocation('gallery.html')" ><a>Gallery</a></li>
+                    <li id="contact"><a href="contact.html" >Contact</a></li>
+                        </ul>
+                    </nav>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="main">
+        <div id="home-text">
+        <span >Your hour-hand stopped working?</span>
+        <br>Come and visit us!
+        </div>
+        <div id="home-image"></div>
+    </div>
+    <div class="right">
+        <div class="clock" onclick="playSound()">
+            <div>
+                <div class="info date"></div>
+                <div class="info day"></div>
+            </div>
+            <div class="dot"></div>
+            <div>
+                <div class="hour-hand"></div>
+                <div class="minute-hand"></div>
+                <div class="second-hand"></div>
+            </div>
+            <div id="time-placeholders">
+                <span class="h3">3</span>
+                <span class="h6">6</span>
+                <span class="h9">9</span>
+                <span class="h12">12</span>
+            </div>
+            <div class="diallines"></div>
+        </div>
+        <span style="font-family: Bahnschrift; color:#BF0000">HOURGLASS</span>
+        <audio src="img/clock-ticking-5.mp3" autoplay="false" id="sound1"></audio>
+    </div>
+
+    <div class="footer">
+        <div id="arrow" onclick="scrollToTop()"></div>
+        <span style="font-size: 12px; margin:0 auto">© 2019 Vienna Hourglass Shop&Service • 703-255-0055 • Powered & Designed by Void</span>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/wristwatch-clock-time-watches-512.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <title>Hourglass | Gallery</title>
+
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="header">
+        <header>
+            <nav>
+                <ul>
+                    <li id="home" onclick="changeLocation('index.html')"><a >Home</a></li>
+                    <li onclick="toggleMenu()">Menu</li>
+                    <nav id="menu">
+                        <ul>
+                            <li id="about-us" onclick="changeLocation('about-us.html')"><a >About Us</a></li>
+                            <li id="gallery" onclick="changeLocation('gallery.html')" ><a>Gallery</a></li>
+                            <li id="contact"><a href="contact.html" >Contact</a></li>
+                        </ul>
+                    </nav>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="main">
+        <div class="image-container-top">
+            <div class="gallery-img">
+                <img height="200" width="300" src="img/how-often-should-i-service-my-clock_large.jpg">
+            </div>
+            <div class="gallery-img">
+                <img height="200" width="300" src="img/rawImage.jpg">
+            </div>
+            <div class="gallery-img">
+                <img height="200" width="300" src="img/images%20(1).jfif">
+            </div>
+        </div><br>
+        <div class="image-container-bottom">
+            <div class="gallery-img">
+                <img height="200" width="300" src="img/images.jfif" style="margin-right: 150px">
+            </div>
+            <div class="gallery-img">
+                <img height="200" width="300" src="img/slide_technicians_3.jfif">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div id="arrow" onclick="scrollToTop()"></div>
+        <span style="font-size: 12px; margin:0 auto"> © 2019 Vienna Hourglass Shop&Service • 703-255-0055 • Powered & Designed by Void</span>
+    </div>
+
+</div>
+</body>
+</html>

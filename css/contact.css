@@ -1,0 +1,9 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'header header header'
+            'main main main'
+            'footer footer footer';
+    background-color: #D3E9FE;
+    height: 100vh;
+}

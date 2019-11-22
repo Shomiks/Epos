@@ -1,0 +1,15 @@
+#home-text{
+    line-height: 75px;
+    font-family: Cambria, serif;
+    font-size: 60px;
+}
+
+#home-image{
+    margin: 75px auto;
+    background-image: url(../img/pocetna.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height:300px;
+    border-radius: 25%;
+}

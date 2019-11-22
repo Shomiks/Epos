@@ -19,7 +19,7 @@ $(document).ready(function () {
     var menu = $("#menu")[0];
     if(window.location.pathname != "/Epos/index.html"){
         menu.style.display = "block";
-
+        console.log(window.location.pathname);
         if(window.location.pathname == "/Epos/about-us.html"){
             $("#about-us")[0].firstElementChild.style.color = "hotpink"
         }

@@ -8,7 +8,7 @@ function toggleMenu() {
 }
 
 function changeLocation(location){
-        window.location.pathname = "EPOS/" + location;
+        window.location.pathname = "Epos/" + location;
 }
 
 function scrollToTop(){

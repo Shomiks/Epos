@@ -8,6 +8,7 @@ function toggleMenu() {
 }
 
 function changeLocation(location){
+    console.log(window.location.pathname);
         window.location.pathname = "Epos/" + location;
 }
 
